@@ -15,7 +15,12 @@ public class Champion {
         this.message = message;
     }
 
-    public static synchronized Champion getChampion(String message){
+    /**
+     * 设置冠军
+     * @param message
+     * @return
+     */
+    public static synchronized Champion setChampion(String message){
         if(uniqueChampion == null){
             uniqueChampion = new Champion(message + "是冠军!!!");
         }

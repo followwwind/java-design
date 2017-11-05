@@ -31,8 +31,8 @@ public class Player extends Thread{
             int x = button.getBounds().x;
             int y = button.getBounds().y;
             int width = button.getWidth();
-            if((x + width) >= Application.MaxDistance ){
-                champion = Champion.getChampion(button.getText());
+            if((x + width) >= Application.MAX_DISTANCE ){
+                champion = Champion.setChampion(button.getText());
                 showMess.setText(champion.getMessage());
                 return;
             }

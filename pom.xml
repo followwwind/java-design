@@ -8,6 +8,7 @@
   <modules>
     <module>producer-consumer</module>
     <module>singleton</module>
+      <module>command</module>
   </modules>
   <packaging>pom</packaging>
 

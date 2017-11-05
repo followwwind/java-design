@@ -14,7 +14,7 @@ import java.util.concurrent.locks.ReentrantLock;
  */
 public class ResourceManage {
 
-    private final Semaphore semaphore ;
+    private final Semaphore semaphore;
     private boolean[] resourceArray;
     private final ReentrantLock lock;
 
@@ -55,7 +55,7 @@ public class ResourceManage {
         int id = -1;
         lock.lock();
         try {
-            //lock.lock();//虽然使用了锁控制同步，但由于只是简单的一个数组遍历，效率还是很高的，所以基本不影响性能。
+            //虽然使用了锁控制同步，但由于只是简单的一个数组遍历，效率还是很高的，所以基本不影响性能。
             for(int i = 0; i < 10; i++){
                 if(resourceArray[i]){
                     resourceArray[i] = false;

@@ -10,17 +10,15 @@ import java.awt.event.ActionListener;
  */
 public class Application extends JFrame implements ActionListener{
 
-    public static final int MaxDistance = 500;
-
-    JButton start;
-    Player one, two, three;
-    JButton btnOne, btnTwo, btnThree;
-    JTextField showLabel;
+    public static final int MAX_DISTANCE = 500;
+    private Player one, two, three;
+    private JButton btnOne, btnTwo, btnThree;
+    private JTextField showLabel;
 
     public Application() {
         setLayout(null);
 
-        start = new JButton("开始比赛");
+        JButton start = new JButton("开始比赛");
         start.addActionListener(this);
         add(start);
         start.setBounds(200, 30, 90, 20);
@@ -87,7 +85,7 @@ public class Application extends JFrame implements ActionListener{
     @Override
     public void paint(Graphics g) {
         super.paint(g);
-        g.drawLine(MaxDistance, 0, MaxDistance, MaxDistance);
+        g.drawLine(MAX_DISTANCE, 0, MAX_DISTANCE, MAX_DISTANCE);
     }
 
 

@@ -11,10 +11,6 @@ import java.util.LinkedList;
  * @author wind
  */
 public class StorageThree implements Storage{
-    /**
-     * 仓库最大存储量
-      */
-    private final int MAX_SIZE = 100;
 
     /**
      * 仓库存储的载体

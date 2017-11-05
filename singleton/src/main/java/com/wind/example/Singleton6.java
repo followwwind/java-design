@@ -9,7 +9,7 @@ package com.wind.example;
  */
 public enum Singleton6 {
     /**
-     *
+     * 实例
      */
     INSTANCE;
 }
