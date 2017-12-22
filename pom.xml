@@ -10,6 +10,7 @@
     <module>singleton</module>
       <module>command</module>
       <module>observer</module>
+      <module>wrapper</module>
   </modules>
   <packaging>pom</packaging>
 
